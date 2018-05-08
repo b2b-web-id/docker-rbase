@@ -2,9 +2,9 @@ FROM debian:stretch
 MAINTAINER B2B.Web.ID Data Analytics Platform Labs
 RUN apt update && \
     apt install -y gnupg2
-COPY cran.list /etc/apt/sources.list.d/
-RUN apt-key adv --keyserver keys.gnupg.net \
-       --recv-key E19F5F87128899B192B1A2C2AD5F960A256A04AF && \
+ADD cran.list jranke.asc /root
+RUN apt-key add /root/jranke.asc && \
+    mv /root/cran.list /etc/apt/sources.list.d/ && \
     apt-get update && \
     apt-get install -y r-base && \
     apt-get clean
