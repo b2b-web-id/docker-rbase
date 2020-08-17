@@ -1,4 +1,4 @@
-FROM debian:sid
+FROM debian:buster
 MAINTAINER B2B.Web.ID Data Analytics Platform Labs
 RUN apt-get update && \
     apt-get install -y r-base && \
