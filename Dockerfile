@@ -1,4 +1,4 @@
-FROM debian:sid
+FROM bitnami/minideb:latest
 MAINTAINER B2B.Web.ID Data Analytics Platform Labs
 RUN apt-get update && \
     apt-get install -y gnupg2
