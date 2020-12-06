@@ -1,4 +1,4 @@
-FROM bitnami/minideb:latest
+FROM bitnami/minideb:unstable
 MAINTAINER B2B.Web.ID Data Analytics Platform Labs
 RUN apt-get update && \
     apt-get install -y gnupg2
