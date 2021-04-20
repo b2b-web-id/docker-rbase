@@ -2,6 +2,7 @@ FROM debian:buster
 MAINTAINER B2B.Web.ID Data Analytics Platform Labs
 RUN apt-get update && \
     apt-get install -y gnupg2
+<<<<<<< HEAD
 RUN echo "deb http://cloud.r-project.org/bin/linux/debian buster-cran40/" \
        >> /etc/apt/sources.list && \
     apt-key adv --keyserver keys.gnupg.net \
