@@ -1,4 +1,4 @@
-FROM b2bwebid/r-base:buster
+FROM b2bwebid/r-base:bullseye
 MAINTAINER B2B.Web.ID Data Analytics Platform Labs
 RUN echo "deb http://cloud.r-project.org/bin/linux/debian buster-cran40/" \
        >> /etc/apt/sources.list && \

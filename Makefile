@@ -1,5 +1,5 @@
 NAME = b2bwebid/r-base
-VERSION = buster-cran40
+VERSION = bullseye-cran40
 
 .PHONY: all build tag_latest release
 
