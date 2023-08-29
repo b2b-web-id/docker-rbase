@@ -1,5 +1,5 @@
 NAME = b2bwebid/r-base
-VERSION = unstable
+VERSION = bookworm
 
 .PHONY: all build tag_latest release
 
@@ -14,4 +14,4 @@ tag_latest:
 release: tag_latest
 	@if ! docker images $(NAME) | awk '{ print $$2 }' | grep -q -F $(VERSION); then echo "Build image first."; false; fi
 	docker push $(NAME):$(VERSION)
-	docker push $(NAME):latest
+	docker push ${NAME}:latest
