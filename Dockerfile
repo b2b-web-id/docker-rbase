@@ -1,4 +1,4 @@
-FROM b2bwebid/debian:bookworm
+FROM b2bwebid/debian:trixie
 LABEL MAINTAINER="B2B.Web.ID Data Analytics Platform Labs"
 RUN apt-get update && \
     apt-get install -y r-base && \
