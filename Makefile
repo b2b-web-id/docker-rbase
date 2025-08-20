@@ -1,5 +1,5 @@
 NAME = b2bwebid/r-base
-VERSION = bookworm
+VERSION = trixie
 
 .PHONY: all build tag_latest release
 
